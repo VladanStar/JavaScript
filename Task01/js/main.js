@@ -13,4 +13,14 @@ function inflationCalculator() {
 
   let sabiranje = parseInt(stopaInflacije) + parseInt(money);
   console.log(sabiranje);
+
+  let years = document.querySelector('#years').value;
+  years = parseFloat(years)
+
+  let worth = money + (money + (stopaInflacije/100));
+  console.log(worth);
+  for(let i = 0; i<years;i++){
+    worth += worth*(stopaInflacije/100)
+  }
+  console.log(worth)
 }
