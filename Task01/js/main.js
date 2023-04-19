@@ -7,11 +7,10 @@
 // console.warn("Error Warn")
 
 function inflationCalculator() {
-
-  let stopaInflacije= document.querySelector('#inflationRate').value
+  let stopaInflacije = document.querySelector("#inflationRate").value;
   console.log("stopaInflacije");
-  let money = document.querySelector('#money').value;
+  let money = document.querySelector("#money").value;
 
-  let sabiranje = stopaInflacije+ money;
-  console.log(sabiranje)
+  let sabiranje = parseInt(stopaInflacije) + parseInt(money);
+  console.log(sabiranje);
 }
