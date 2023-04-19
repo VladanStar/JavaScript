@@ -23,4 +23,9 @@ function inflationCalculator() {
     worth += worth*(stopaInflacije/100)
   }
   console.log(worth)
+
+  let newElement = document.createElement('div');
+  newElement.className = 'new-value';
+  newElement.innerText = `Danasnjih ${money}E vedi isto kao i ${worth} za ${years} godina `
+document.querySelector('container').appendChild(newElement)
 }
