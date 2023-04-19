@@ -7,5 +7,11 @@
 // console.warn("Error Warn")
 
 function inflationCalculator() {
-  console.log("Radi");
+
+  let stopaInflacije= document.querySelector('#inflationRate').value
+  console.log("stopaInflacije");
+  let money = document.querySelector('#money').value;
+
+  let sabiranje = stopaInflacije+ money;
+  console.log(sabiranje)
 }
