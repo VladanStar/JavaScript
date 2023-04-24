@@ -3,10 +3,17 @@
 
   <div class="field">
     <label for="title">Title:</label>
-    <input placeholder="3" name="title">
+    <input name="title" id="title" #newtitle> <!-- promenjeno -->
   </div>
   <div class="field">
     <label for="link">Link:</label>
-    <input placeholder="#" name="link">
-   </div>
+    <input name="link" id="link" #newlink> <!-- promenjeno -->
+  </div>
+
+ <!-- dugme prosleđuje metodi parametre  newtitle i newlink-->
+ <button (click)="addArticle(newtitle, newlink)"
+ class="ui positive right floated button">
+Submit link
+</button>
+
 </form>
